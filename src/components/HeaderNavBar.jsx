@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const navigation = [
-  { name: "Home", href: "home" },
+  { name: "Home", href: "/" },
   { name: "Services", href: "Services" },
   { name: "About Us", href: "AboutUs" },
 ];

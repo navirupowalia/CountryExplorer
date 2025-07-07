@@ -15,7 +15,7 @@ function App() {
 
       <div className=" w-full">
         <Routes>
-          <Route path="/home" element={<HomeScreen />} />
+          <Route path="/" element={<HomeScreen />} />
           <Route path="/AboutUs" element={<AboutUsScreen />} />
           <Route path="/Services" element={<ServicesScreen />} />
         </Routes>
