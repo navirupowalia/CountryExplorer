@@ -1,3 +1,5 @@
+import { GitHub, LinkedIn } from "@mui/icons-material";
+
 import InstagramIcon from "@mui/icons-material/Instagram";
 import React from "react";
 
@@ -7,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <div className="flex flex-col md:flex-row md:justify-between items-center space-y-6 md:space-y-0">
           {/* Logo or Title */}
-          <div className="text-xl font-bold">MyWebsite</div>
+          <h1 className="text-white font-bold">Country Explorer</h1>
 
           {/* Navigation Links */}
           <ul className="flex space-x-6 text-sm">
@@ -43,8 +45,10 @@ const Footer = () => {
               href="#"
               aria-label="Twitter"
               className="hover:text-blue-300"></a>
-            <a href="#" aria-label="Instagram" className="hover:text-pink-400">
-              <InstagramIcon />
+            <a href="#" aria-label="Instagram" className=" flex gap-3">
+              <InstagramIcon className="hover:text-pink-400" />
+              <GitHub className="hover:text-pink-400" />
+              <LinkedIn className="hover:text-pink-400" />
             </a>
           </div>
         </div>

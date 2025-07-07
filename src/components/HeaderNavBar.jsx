@@ -9,16 +9,13 @@ import {
   MenuItems,
 } from "@headlessui/react";
 
-import logo from "../assets/react.svg";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const navigation = [
   { name: "Home", href: "home" },
-  { name: "Our Process", href: "OurProcess" },
   { name: "Services", href: "Services" },
   { name: "About Us", href: "AboutUs" },
-  { name: "Contact Us", href: "ContactUs" },
 ];
 
 function classNames(...classes) {
@@ -50,7 +47,7 @@ const HeaderNavBar = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <img alt="Your Company" src={logo} className="h-8 w-auto" />
+              <h1 className="text-white font-bold">Country Explorer</h1>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
@@ -63,9 +60,9 @@ const HeaderNavBar = () => {
                     }}
                     className={classNames(
                       active === item.name
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                      "rounded-md px-3 py-2 text-sm font-medium"
+                        ? "bg-gray-900 text-white cursor-pointer"
+                        : "text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer",
+                      "rounded-md px-3 py-2 text-sm font-medium cursor-pointer"
                     )}>
                     {item.name}
                   </a>
