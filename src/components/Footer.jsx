@@ -1,6 +1,7 @@
 import { GitHub, LinkedIn } from "@mui/icons-material";
 
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { Link } from "react-router-dom";
 import React from "react";
 
 const Footer = () => {
@@ -14,24 +15,19 @@ const Footer = () => {
           {/* Navigation Links */}
           <ul className="flex space-x-6 text-sm">
             <li>
-              <a href="#" className="hover:text-gray-400">
+              <Link to={"/Home"} className="hover:text-gray-400">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-400">
+              <Link to={"/AboutUs"} clLinkssNLinkme="hover:text-gray-400">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-400">
+              <Link to={"/Services"} className="hover:text-gray-400">
                 Services
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-gray-400">
-                Contact
-              </a>
+              </Link>
             </li>
           </ul>
 
@@ -55,7 +51,7 @@ const Footer = () => {
 
         {/* Divider */}
         <div className="border-t border-gray-700 mt-6 pt-6 text-center text-sm">
-          © {new Date().getFullYear()} MyWebsite. All rights reserved.
+          © {new Date().getFullYear()} Country Explorer All rights reserved.
         </div>
       </div>
     </footer>

@@ -20,7 +20,7 @@ const Home = () => {
             Explore countries, learn about their cultures, flags, populations,
             and more. Let’s make geography fun!
           </p>
-          <Link to="/explore">
+          <Link to="/Services">
             <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300">
               🌍 Explore Countries
             </button>
